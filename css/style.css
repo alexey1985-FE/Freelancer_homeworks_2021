@@ -1,0 +1,95 @@
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+
+.header__menu__list li > a,
+.footer__menu__list li > a{
+	color: red;
+}
+h1 {
+	color: #0c50c7;
+}
+
+.main h3 {
+	color: maroon;
+}
+h4 {
+	color: blue;
+}
+
+.first__paragraph.first{
+	color: sandybrown;
+}
+.first {
+	color: green;
+}
+
+#link + p {
+	color: red;
+}
+
+.first.span__word {
+	color: blue;
+}
+
+.span__word span{
+	color: #00BCD4;
+}
+.main__content .text__list a {
+	color: #0CCE6B;
+}
+
+.main__final .final {
+	color: #0CCE6B;
+}
+
+.main__final p ~ p {
+	color: rebeccapurple;
+}
+
+.block p{
+	color: fuchsia;
+}
+
+.main__content > .all{
+	color: orange;
+}
+
+.block.title p {
+	color: mediumslateblue;
+}
+
+.title + p {
+	color: red;
+}
+
+.final *{
+	color: red;
+}
