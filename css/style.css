@@ -1,4 +1,15 @@
-/* Стили обнуления */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Kobzar KS';
+    src: url('../fonts/KobzarKS.woff2') format('woff2'),
+        url('../fonts/KobzarKS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 *,
 *::before,
 *::after {
@@ -28,68 +39,125 @@ h6 {
 img {
 	vertical-align: top;
 }
-
-.header__menu__list li > a,
-.footer__menu__list li > a{
-	color: red;
-}
-h1 {
-	color: #0c50c7;
+body {
+	font-family: "Lato", sans-serif;
+	font-size: 20px;
+	color: #6A6A6A;
 }
 
-.main h3 {
+.header__logo {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+	color: #10375c;
+	letter-spacing: 16px;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.header__nav,
+.logos__names,
+.footer__nav,
+.links__spaces,
+.links__company,
+.links__support{
+	text-align: center;
+}
+
+.nav__list__link,
+.logos__names a {
+	font-family: "Kobzar KS", sans-serif;
+	font-size: 30px;
+}
+.logos__names {
+	text-transform: uppercase;
+}
+.registration,
+.links__contact {
+	color: #FF5722;
+	text-align: right;
+	font-weight: bold;
+}
+.main__sign__intro {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+h1{
+	font-family: "Lora", sans-serif;
+	font-weight: bold;
+	font-size: 52px;
+	line-height: 67px;
+	text-indent: 50px;
+	color: #10375C;
+}
+h2 {
+	color: #CA0000;
+	font-size: 30px;
+	text-decoration: underline;
+	font-family: "Kobzar KS";
+}
+
+.sign__title span {
+	color: #DD2C00;
+}
+.sign__text {
+	font-family: Arial, sans-serif;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 30px;
+	word-spacing: 30px;
+	text-transform: capitalize;
+
+}
+.main__sign__input {
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 2px 2px 20px #CA0000, 5px 7px 6px #CA0000, 1px 5px 5px #CA0000;
+	color: #0CCE6B;
+}
+.main__spaces__slides p {
+	line-height: 50px;
+}
+.slide__center,
+.question__answers {
+	text-decoration: line-through;
+	letter-spacing: 60px;
+}
+
+.indicators__text {
 	color: maroon;
+	text-shadow: 5px 5px;
 }
-h4 {
-	color: blue;
-}
-
-.first__paragraph.first{
-	color: sandybrown;
-}
-.first {
-	color: green;
-}
-
-#link + p {
-	color: red;
+.facilities__menu__list {
+	color: darkviolet;
+	text-transform: lowercase;
+	word-spacing: 45px;
+	text-decoration: overline;
+	font-family: Arial, sans-serif;
+	font-style: oblique;
 }
 
-.first.span__word {
-	color: blue;
+.phone {
+	white-space: nowrap;
 }
-
-.span__word span{
-	color: #00BCD4;
+.news__blocks {
+	text-align: center;
 }
-.main__content .text__list a {
-	color: #0CCE6B;
+.footer {
+	font-family: "Kobzar KS";
 }
-
-.main__final .final {
-	color: #0CCE6B;
+.customers__block {
+	font-size: 30px;
+	text-shadow: 5px 2px 20px #000, 9px 7px 0 #000, 5px 7px 20px #000;
+	text-align: justify;
 }
-
-.main__final p ~ p {
-	color: rebeccapurple;
-}
-
-.block p{
-	color: fuchsia;
-}
-
-.main__content > .all{
-	color: orange;
-}
-
-.block.title p {
-	color: mediumslateblue;
-}
-
-.title + p {
-	color: red;
-}
-
-.final *{
-	color: red;
+.spaces__text {
+	text-transform: uppercase;
+	word-spacing: 50px;
+	text-align: justify;
+	line-height: 30px;
+	text-shadow: -5px 5px 3px #3c3d78, 5px 2px 20px #000, 5px 2px 20px #000;
 }
