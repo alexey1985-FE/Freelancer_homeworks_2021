@@ -16,6 +16,7 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
+	box-sizing: border-box;
 }
 li {
 	list-style: none;
@@ -40,124 +41,162 @@ img {
 	vertical-align: top;
 }
 body {
-	font-family: "Lato", sans-serif;
-	font-size: 20px;
+	font-size: 16px;
 	color: #6A6A6A;
+	max-width: 1110px;
+	margin: 61px auto 0;
+    font-family: "Lato", sans-serif;
 }
 
+.header {
+	height: 43px;
+	margin-bottom: 56px;
+}
 .header__logo {
-	font-style: normal;
-	font-weight: bold;
-	font-size: 24px;
-	line-height: 32px;
-	color: #10375c;
-	letter-spacing: 16px;
-	text-transform: uppercase;
-	text-decoration: underline;
+	display: inline-block;
 }
-
+.header__logo a {
+	width: 89px;
+	font-family: Lora;
+	font-weight: bold;
+    font-size: 24px;
+	color: #10375C;
+	padding-right: 144px;
+}
+.nav__list__link {
+	font-weight: bold;
+    font-size: 16px;
+	color: #222831;
+}
 .header__nav,
-.logos__names,
-.footer__nav,
-.links__spaces,
-.links__company,
-.links__support{
-	text-align: center;
+.nav__list {
+	display: inline;
+}
+.nav__list li,
+.logos__names li {
+	display: inline-block;
+	padding-left: 40px;
 }
 
-.nav__list__link,
-.logos__names a {
-	font-family: "Kobzar KS", sans-serif;
-	font-size: 30px;
+.log_in,
+.sign_up {
+	display: inline-block;
 }
-.logos__names {
-	text-transform: uppercase;
+
+.log_in a,
+.sign_up a{
+	color: #FF5722
 }
-.registration,
-.links__contact {
-	color: #FF5722;
-	text-align: right;
-	font-weight: bold;
+.log_in a {
+	padding-left: 81px;
+}
+.sign_up a {
+	padding-left: 20px;
 }
 .main__sign__intro {
+	margin-bottom: 8px;
 	font-size: 20px;
-	line-height: 30px;
+	color: #222831;
 }
-
-h1{
-	font-family: "Lora", sans-serif;
-	font-weight: bold;
-	font-size: 52px;
-	line-height: 67px;
-	text-indent: 50px;
-	color: #10375C;
+.sign__title {
+	width: 667px;
+	display: inline-block;
 }
-h2 {
-	color: #CA0000;
-	font-size: 30px;
-	text-decoration: underline;
-	font-family: "Kobzar KS";
-}
-
 .sign__title span {
 	color: #DD2C00;
 }
+h1, h2 {
+	font-family: Lora;
+	font-weight: 700;
+	font-size: 52px;
+	color: #10375C;
+}
 .sign__text {
-	font-family: Arial, sans-serif;
-	font-size: 30px;
-	font-style: italic;
-	font-weight: bold;
+	display: inline-block;
+	width: 382px;
+	height: 120px;
+	font-size: 20px;
 	line-height: 30px;
-	word-spacing: 30px;
-	text-transform: capitalize;
-
+	overflow: auto;
 }
 .main__sign__input {
+	margin-bottom: 20px;
+}
+.main__sign img {
+	width: 960px;
+	height: 626px;
+	margin-left: 315px;
+}
+
+.main__sign__input {
 	text-transform: uppercase;
-	text-align: center;
 	text-shadow: 2px 2px 20px #CA0000, 5px 7px 6px #CA0000, 1px 5px 5px #CA0000;
 	color: #0CCE6B;
+	display: inline-block;
+	max-height: 30px;
+	overflow: hidden;
 }
-.main__spaces__slides p {
-	line-height: 50px;
+.main__sign {
+	margin-bottom: 112px;
 }
-.slide__center,
-.question__answers {
-	text-decoration: line-through;
-	letter-spacing: 60px;
-}
-
-.indicators__text {
-	color: maroon;
-	text-shadow: 5px 5px;
-}
-.facilities__menu__list {
-	color: darkviolet;
-	text-transform: lowercase;
-	word-spacing: 45px;
-	text-decoration: overline;
-	font-family: Arial, sans-serif;
-	font-style: oblique;
-}
-
-.phone {
-	white-space: nowrap;
-}
-.news__blocks {
+.logos__title h2 {
+	font-size: 40px;
+	line-height: 51px;
 	text-align: center;
+	margin-bottom: 24px;
 }
-.footer {
-	font-family: "Kobzar KS";
+.logos__title p {
+	font-size: 18px;
+	line-height: 28px;
+	text-align: center;
+	margin-bottom: 56px;
 }
-.customers__block {
-	font-size: 30px;
-	text-shadow: 5px 2px 20px #000, 9px 7px 0 #000, 5px 7px 20px #000;
-	text-align: justify;
+.logos__names {
+	width: 1175.53px;
 }
-.spaces__text {
-	text-transform: uppercase;
-	word-spacing: 50px;
-	text-align: justify;
-	line-height: 30px;
-	text-shadow: -5px 5px 3px #3c3d78, 5px 2px 20px #000, 5px 2px 20px #000;
-}
+
+
+
+
+
+
+/*.header__logo {*/
+/*	font-style: normal;*/
+/*	font-weight: bold;*/
+/*	font-size: 24px;*/
+/*	line-height: 32px;*/
+/*	color: #10375c;*/
+/*	letter-spacing: 16px;*/
+/*	text-transform: uppercase;*/
+/*	text-decoration: underline;*/
+/*}*/
+
+/*.header__nav,*/
+/*.logos__names,*/
+/*.footer__nav,*/
+/*.links__spaces,*/
+/*.links__company,*/
+/*.links__support{*/
+/*	text-align: center;*/
+/*}*/
+
+/*.nav__list__link,*/
+/*.logos__names a {*/
+/*	font-family: "Kobzar KS", sans-serif;*/
+/*	font-size: 30px;*/
+/*}*/
+/*.logos__names {*/
+/*	text-transform: uppercase;*/
+/*}*/
+/*.registration,*/
+/*.links__contact {*/
+/*	color: #FF5722;*/
+/*	text-align: right;*/
+/*	font-weight: bold;*/
+/*}*/
+
+
+/*.main__sign__intro {*/
+/*	font-size: 20px;*/
+/*	line-height: 30px;*/
+/*}*/
