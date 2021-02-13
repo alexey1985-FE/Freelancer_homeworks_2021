@@ -55,7 +55,8 @@ body {
 
 }
 .header__logo {
-	display: inline-block;
+	display: inline;
+	padding-right: 144px;
 }
 .header__logo a {
 	width: 89px;
@@ -63,38 +64,70 @@ body {
 	font-weight: bold;
     font-size: 24px;
 	color: #10375C;
-	padding-right: 144px;
 }
+
+
 .nav__list__link {
 	font-weight: bold;
     font-size: 16px;
-	color: #222831;
+	color: #fff;
+	outline: 1px dashed #0a0a13;
 }
+.nav__list__link:hover {
+	color: #ff0000;
+	text-decoration: underline;
+}
+.nav__list__link:active {
+	color: yellow;
+}
+.nav__list__link:visited {
+	outline:#1d8ffa;
+}
+
+.nav__list li:nth-child(even) {
+	background-color: rebeccapurple;
+}
+.nav__list li:nth-child(odd) {
+	background-color: #2a67e7;
+}
+
+
 .header__nav,
 .nav__list {
 	display: inline;
 }
 .nav__list li {
 	display: inline-block;
-	padding-left: 40px;
+	margin-left: 40px;
 
+}
+.header__nav a:visited {
+	background-color: yellow;
 }
 
 .log_in,
 .sign_up {
 	display: inline-block;
 }
+.log_in {
+	padding-left: 81px;
+}
+.sign_up {
+	padding-left: 20px;
+}
 
 .log_in a,
 .sign_up a{
 	color: #FF5722
 }
-.log_in a {
-	padding-left: 81px;
+
+.log_in a:hover,
+.sign_up a:hover {
+background-color: #0CCE6B;
+	color: #fff;
 }
-.sign_up a {
-	padding-left: 20px;
-}
+
+
 .main__sign__intro {
 	margin-bottom: 8px;
 	font-size: 20px;
@@ -102,7 +135,7 @@ body {
 }
 .sign__title {
 	width: 667px;
-	display: inline-block;
+	display: inline;
 }
 .sign__title span {
 	color: #DD2C00;
@@ -132,6 +165,23 @@ h1, h2 {
 .main__sign__input {
 	margin-bottom: 20px;
 }
+
+.main__sign__intro {
+	display: inline;
+	color: yellow;
+}
+
+.main__sign__intro::after {
+	content: '';
+	display: inline-block;
+	width: 73px;
+	height: 2px;
+	background-color: yellow;
+	vertical-align: middle;
+	margin-left: 15px;
+
+}
+
 .main__sign img {
 	width: 960px;
 	height: 626px;
@@ -152,7 +202,7 @@ h1, h2 {
 }
 .main__sign {
 	margin-bottom: 112px;
-	background: url("../img/Rectangle 17.jpg") 0 0 / cover no-repeat fixed;
+	/*background: url("../img/Rectangle 17.jpg") 0 0 / cover no-repeat fixed;*/
 
 }
 .logos__title h2 {
@@ -180,6 +230,16 @@ h1, h2 {
    display: inline-block;
    padding: 5px 40px 0 13px;
    background: url("../img/Check.svg") right center/ 30px no-repeat;
+}
+
+.logos__names a:hover {
+	opacity: 0.1;
+}
+.logos__names a:focus {
+	outline: 3px solid #CA0000;
+}
+.logos__names a:visited {
+	color: #0CCE6B;
 }
 
 .main__spaces {
@@ -249,7 +309,7 @@ h1, h2 {
 	line-height: 28px;
 	width: 253px;
 	color: #fff;
-	margin-bottom: 111px;
+	margin-bottom: 96px;
 	border-radius: 22px;
 }
 .check {
@@ -257,25 +317,55 @@ h1, h2 {
 	background: #ff5722 url("../img/Check.svg") 15px center/ 30px no-repeat;;
 	color: #fff;
 	font-weight: 700;
-	padding: 25px 74px 25px 50px;
-	max-width: 255px;
+	padding: 24px 17px 22px 58px;
+	max-width: 250px;
 	line-height: 23px;
 	font-size: 20px;
 	margin-right: 93px;
-
+	border-radius: 22px
 }
+
+.check:hover {
+     background: none;
+}
+
+.check::after {
+	content: '';
+	display: inline-block;
+	background: url("../img/chevron_right.svg") no-repeat;
+	width: 20px;
+    height: 25px;
+	margin: 0 0 -4px 0;
+}
+
+.slide__check {
+   margin: 21px 0 0 0;
+}
+
 .slide__right {
 	float: right;
 	text-align: center;
 }
 .logos__title {
-	margin-bottom: 500px;
+	margin-bottom: 120px;
 }
 
 .logos {
-	margin-bottom: 300px;
+	margin-bottom: 200px;
 	height: 500px;
-	background: url("../img/pattern.png") 80px 60px/ 100px 100px
+	background: url("../img/pattern.png") 80px 60px/ 100px 100px;
+	text-align: center;
+}
+
+.logos__title p {
+	color: #0a0a13;
+	display: inline-block;
+}
+.logos__title p:nth-child(4) {
+	color: red;
+}
+.logos__title p:first-of-type {
+	background-color: #02ccba;
 }
 
 
