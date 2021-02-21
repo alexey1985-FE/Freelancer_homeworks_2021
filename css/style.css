@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Gilroy';
     src: url('Gilroy-Bold.woff2') format('woff2'),
-        url('Gilroy-Bold.woff') format('woff');
+         url('Gilroy-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
     font-family: 'Gilroy';
     src: url('Gilroy-Regular.woff2') format('woff2'),
-        url('Gilroy-Regular.woff') format('woff');
+         url('Gilroy-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
     font-family: 'Gilroy';
     src: url('Gilroy-Medium.woff2') format('woff2'),
-        url('Gilroy-Medium.woff') format('woff');
+         url('Gilroy-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -199,7 +199,6 @@ body {
 .enter__link {
     font-size: 14px;
     line-height: 16px;
-    text-transform: capitalize;
     color: #A3A3A3;
     display: inline-block;
     margin-top: 19px;
@@ -207,7 +206,8 @@ body {
 .registration__title {
     text-align: center;
 }
-.registration__title h1 {
+.registration__title h1,
+.registration__title h2 {
    font-weight: bold;
    font-size: 38px;
    margin-top: 28px;
@@ -320,7 +320,9 @@ body {
 }
 
 .conditions__link:hover,
-.account__link:hover {
+.account__link:hover,
+.back__to__form:hover,
+.link:hover {
     text-decoration: underline;
 }
 
@@ -388,4 +390,45 @@ body {
 .header__list .header__submenu li:last-child,
 .header__ellips li:last-child {
     margin-bottom: 0;
+}
+.enter__e-mail {
+  font-weight: 500;
+  font-size: 16px;
+  color: #64B369;
+  margin-top: 10px;
+}
+.back__to__form {
+   color: #fff;
+   margin: 20px 0 30px;
+   display: inline-block;
+   position: relative;
+   padding-left: 40px;
+}
+.back__to__form::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/arrow-left.svg") center  no-repeat;
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+.recover__message {
+    font-size: 16px;
+    line-height: 19px;
+    color: #AEAEAE;
+    margin-bottom: 30px;
+}
+.enter__social {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.social {
+     text-align: center;
+     margin-bottom: 30px;
+}
+.social a + a{
+    margin-left: 30px;
 }

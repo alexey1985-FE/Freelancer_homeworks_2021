@@ -90,7 +90,6 @@
                                        placeholder="Пароль*">
 				            </div>
                         </div>
-                  
                     
                         <div class="form__line">
                             <div class="form__checkbox">
@@ -105,7 +104,16 @@
                              <div class="form__button">
                                  <button class="button" type="submit">Войти</button>
                              </div>
-                          
+                             <p class="enter__social">Войти через:</p>
+                             <div class="social">
+                                 <a href="#"><img src="img/vk.svg" alt="vk"></a>
+                                 <a href="#"><img src="img/facebook.svg" alt="fb"></a>
+                                 <a href="#"><img src="img/odnoklassniki.svg" alt="od"></a>
+                             </div>
+                               <div class="account">
+                                 <p>У вас нет аккаунта?</p>
+                                 <a class="account__link" href="#">Регистрация</a>
+                            </div>
 			            </div>
                 </form>
             </div>
@@ -114,7 +122,7 @@
              <div class="container">
                     <a class="enter__link" href="#">Вход</a>
                     <div class="registration__title">
-                        <h1>Регистрация</h1>
+                        <h2>Регистрация</h2>
                     </div>
                 <form action="#" enctype="multipart/form-data" class="main__form">
                         <div class="form__line">
@@ -187,7 +195,37 @@
                 </form>
             </div>
             
-       
+            
+             <div class="container">
+                    <a class="enter__link" href="#">Восстановление пароля</a>
+                    <div class="registration__title">
+                        <h2>Восстановление пароля</h2>
+                         <p class="enter__e-mail">Введите Email, на него будет выслан новый пароль</p>
+                    </div>
+                <form action="#" enctype="multipart/form-data" class="main__form">
+                        <div class="form__line">
+				            <div class="form__input">
+					            <input class="input" minlength = "4" type="email"
+                                       placeholder="Почта*">
+				            </div>
+                             <a class="back__to__form" href="#">Вернуться в форму авторизации</a>
+                        </div>
+    
+                        <div class="form__line">
+                             <div class="form__button">
+                                 <button class="button" type="submit">Отправить</button>
+                             </div>
+                             <p class="recover__message">
+                                * Если вы не получили письмо с паролем, проверьте папку Спам.
+                            </p>
+                            <div class="account">
+                                 <p>У вас нет аккаунта?</p>
+                                 <a class="account__link" href="#">Регистрация</a>
+                            </div>
+			            </div>
+                </form>
+            </div>
+            
         </main>
         <footer></footer>
     </body>
