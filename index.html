@@ -1,120 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
 	    <meta charset="UTF-8">
-	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0>
-	    <meta http-equiv="X-UA-Compatible content="ie=edge">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	    <link rel="stylesheet" href="css/style.css">
-	    <title>Lesson 9</title>
+	    <title>Lesson 10</title>
     </head>
     <body>
-    <header class="header"></header>
-       <main>
-           <div class="container">
-               <div class="car">
-                   <div class="pompier">
-                        <div class="pompier__block"></div>
-                        <div class="pompier__block-2"></div>
-                        <span class="span__block"></span>
-                        <span class="span__block"></span>
-                        <span class="span__block"></span>
-                   </div>
-                    <div class="siren"></div>
-                    <div class="car__ladder">
-                        <div class="car__ladder__circles">
-                           <div class="circle"></div>
-                           <div class="circle"></div>
-                           <div class="circle"></div>
-                           <div class="circle"></div>
-                           <div class="circle"></div>
-                           <div class="circle"></div>
-                           <div class="circle"></div>
-                           <div class="circle"></div>
-                           <div class="circle"></div>
-                           <div class="circle"></div>
-                           <div class="circle"></div>
-                           <div class="circle"></div>
-                           <div class="circle"></div>
-                           <div class="circle"></div>
-                       </div>
-                        <div class="ladder__blocks">
-                           <div class="block-1"></div>
-                           <div class="block-2"></div>
-                           <div class="block-3"></div>
-                        </div>
-                    </div>
-                     <div class="car__body__right">
-                         <div class="body__right__top">
-                             <div class="block__black"></div>
-                         </div>
-                         
-                         <div class="door__left">
-                             <div class="window__left"></div>
-                             <div class="door__knob"></div>
-                         </div>
-                         <div class="door__right">
-                             <div class="window__right"></div>
-                              <div class="door__knob_right"></div>
-                         </div>
-                         
-                         <div class="body__right__middle">
-                             <div class="light"></div>
-                         </div>
-                         <div class="body__right__bottom">
-                               <div class="block__front__wheel">
-                                    <div class="transparent__block_right"></div>
-                                      <div class="back__wheel-1">
-                                <div class="wheel__circle">
-                                    <span class="circle__span"></span>
-                                </div>
-                            </div>
-                               </div>
-                             <div class="bamper"></div>
-                             <div class="bamper__down"></div>
-                             <div class="light__down"></div>
-                             <div class="down__block"></div>
-                             <div class="down__block"></div>
-                         </div>
-                        
-                    </div>
-                     <div class="car__body__left">
-                   <div class="body__left__top">
-                       
-                       <div class="luke">
-                            <span class="luke__small"></span>
-                            <span class="luke__small"></span>
-                            <div class="luke__knob"></div>
-                       </div>
-                   </div>
-                   <div class="body__left__middle"></div>
-                   <div class="body__left__bottom">
-                       <div class="block__back__wheels">
-              
-                            <div class="back__wheels">
-                            <div class="back__wheel-1">
-                                <div class="wheel__circle">
-                                    <span class="circle__span"></span>
-                                </div>
-                            </div>
-                            <div class="back__wheel-2">
-                                 <div class="wheel__circle">
-                                     <span class="circle__span"></span>
-                                 </div>
-                            </div>
-                              <div class="tube">
-                                  <span class="transp__dot"></span>
-                              </div>
-                              
-                        </div>
-                     </div>
-                        <div class="transparent__block"></div>
-                   </div>
+        <header class="header">
+           <div class="header__container">
+               <div class="header__logo">
+                   <a href="#">Uzbeklar.net</a>
+               </div>
+               <nav class="header__nav">
+                   <ul class="header__list">
+                       <li><a href="#" class="header__link">Фильмы</a>
+                           <ul class="header__submenu">
+                               <li><a href="#">Драмы</a></li>
+                               <li><a href="#">Боевики</a></li>
+                               <li><a href="#">Фантастика</a></li>
+                               <li><a href="#">Ужасы</a></li>
+                               <li><a href="#">Комедии</a></li>
+                               <li><a href="#">Приключения</a></li>
+                               <li><a href="#">Мюзиклы</a></li>
+                               <li><a href="#">Триллеры</a></li>
+                               <li><a href="#">Военные</a></li>
+                               <li><a href="#">Документальные</a></li>
+                               <li><a href="#">Спортивные</a></li>
+                               <li><a href="#">Криминал</a></li>
+                           </ul>
+                       </li>
+                       <li><a href="#" class="header__link">Клипы</a>
+                            <ul class="header__submenu">
+                               <li><a href="#">Зарубежные</a></li>
+                               <li><a href="#">Отечественные</a></li>
+                               <li><a href="#">Детские</a></li>
+                               <li><a href="#">Взрослые</a></li>
+                               <li><a href="#">Ретро</a></li>
+                               <li><a href="#">Аниме</a></li>
+                           </ul>
+                       </li>
+                       <li><a href="#" class="header__link">Музыка</a>
+                            <ul class="header__submenu">
+                               <li><a href="#">Рок</a></li>
+                               <li><a href="#">Поп</a></li>
+                               <li><a href="#">Шансон</a></li>
+                               <li><a href="#">Рэп</a></li>
+                               <li><a href="#">Классика</a></li>
+                               <li><a href="#">Джаз</a></li>
+                               <li><a href="#">Блюз</a></li>
+                               <li><a href="#">Кантри</a></li>
+                               <li><a href="#">Фолк</a></li>
+                           </ul>
+                       </li>
+                   </ul>
+               </nav>
+    
+               <form action="#" enctype="multipart/form-data" class="header__form">
+					  <input class="header__input" type="text" placeholder="Поиск...">
+               </form>
+               <div class="header__icon"></div>
+               <div class="header__ellips">
+                  <ul class="header__submenu">
+                       <li><a href="#">Профиль</a></li>
+                       <li><a href="#">Выход</a></li>
+                   </ul>
                </div>
                
-               </div>
-           
-           
            </div>
-       </main>
-     </body>
+        </header>
+        <main>
+            
+            <div class="container">
+                    <a class="enter__link" href="#">Вход</a>
+                    <div class="registration__title">
+                        <h1>Вход</h1>
+                    </div>
+                <form action="#" enctype="multipart/form-data" class="main__form">
+                        <div class="form__line">
+				            <div class="form__input">
+					            <input class="input" minlength = "4" type="email"
+                                       placeholder="Почта*">
+				            </div>
+                        </div>
+                        <div class="form__line">
+				            <div class="form__input">
+					            <input class="input" minlength="8" required name="password" type="password"
+                                       placeholder="Пароль*">
+				            </div>
+                        </div>
+                  
+                    
+                        <div class="form__line">
+                            <div class="form__checkbox">
+					            <div class="checkbox right">
+						            <input class="checkbox__input" type="checkbox" value="agree"
+                                           name="agreement" id="consent">
+						            <label class="checkbox__label" for="consent">Запомнить меня
+                                    </label>
+                                    <a class="link" href="#">Забыли пароль?</a>
+					            </div>
+				            </div>
+                             <div class="form__button">
+                                 <button class="button" type="submit">Войти</button>
+                             </div>
+                          
+			            </div>
+                </form>
+            </div>
+            
+            
+             <div class="container">
+                    <a class="enter__link" href="#">Вход</a>
+                    <div class="registration__title">
+                        <h1>Регистрация</h1>
+                    </div>
+                <form action="#" enctype="multipart/form-data" class="main__form">
+                        <div class="form__line">
+				            <div class="form__input">
+					            <input class="input" minlength="4" required maxlength="15" type="text"
+                                       placeholder="Имя*">
+				            </div>
+                        </div>
+                        <div class="form__line">
+				            <div class="form__input">
+					            <input class="input" minlength="4" required maxlength="15" type="text"
+                                       placeholder="Фамилия*">
+				            </div>
+                        </div>
+                        <div class="form__line">
+				            <div class="form__input">
+					            <input class="input" minlength="4" required type="text"
+                                       placeholder="Логин*">
+				            </div>
+                        </div>
+                        <div class="form__line">
+				            <div class="form__input">
+					            <input class="input" minlength = "4" type="email"
+                                       placeholder="EMail*">
+				            </div>
+                        </div>
+                        <div class="form__line">
+				            <div class="form__input">
+					            <input class="input" minlength="8" required name="password" type="password"
+                                       placeholder="Пароль*">
+				            </div>
+                        </div>
+                       <div class="form__line">
+				            <div class="form__input">
+					            <input class="input" minlength="8" required type="password"
+                                       placeholder="Повторите пароль*">
+				            </div>
+                       </div>
+                    
+                        <div class="form__line">
+				            <div class="form__radio">
+					            <div class="option">
+						            <input class="option__input" checked type="radio" name="sex" id="male">
+						            <label class="option__label" for="male">Мужчина</label>
+					            </div>
+				            </div>
+				            <div class="form__radio">
+                                <div class="option">
+						            <input class="option__input" type="radio" name="sex" id="female">
+						            <label class="option__label" for="female">Женщина</label>
+					            </div>
+				            </div>
+                            <div class="form__checkbox">
+					            <div class="checkbox">
+						            <input class="checkbox__input" type="checkbox" value="agree"
+                                           name="agreement" id="agree">
+						            <label class="checkbox__label" for="agree">Я согласен с
+                                        <a class="conditions__link" href="#">Условия и правила</a>
+                                    </label>
+					            </div>
+				            </div>
+                             <div class="form__button">
+                                 <button class="button" type="submit">Регистрация</button>
+                             </div>
+                             <div class="account">
+                                 <p>У вас есть аккаунт?</p>
+                                 <a class="account__link" href="#">Войти</a>
+                             </div>
+			            </div>
+                </form>
+            </div>
+            
+       
+        </main>
+        <footer></footer>
+    </body>
 </html>
