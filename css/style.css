@@ -224,7 +224,7 @@ body {
    height: 50px;
    border-radius: 5px;
    font-size: 18px;
-   padding: 13px 0 16px 20px ;
+   padding: 0 13px;
 }
 
 .form__radio {
