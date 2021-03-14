@@ -867,6 +867,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin: 0 -15px 30px -15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .news-main__columns {
@@ -952,6 +954,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin: 0px -15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .right-news__block {
