@@ -1646,4 +1646,4 @@ img {
   }
 }
 
-._webp .ready-main__column_back{ background: url(../img/grid.webp) center 100px no-repeat; }
+.ready-main__column_back{ background: url(../img/grid.webp) center 100px no-repeat; }
